@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form">
+    <TextView
+        android:id="@+id/text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:gravity="center"
+        android:text="Fill the Form"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_below="@+id/text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="80sp">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/profile" />
+
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60sp"
+            android:layout_marginTop="30dp"
+            android:hint="Enter Your Name"
+            android:minHeight="48dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="10sp">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/email_icon" />
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60sp"
+            android:layout_marginTop="30dp"
+            android:hint="Email Address"
+            android:minHeight="48dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_below="@+id/card2"
+        android:layout_marginTop="10sp">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/date_icon" />
+
+        <EditText
+            android:id="@+id/ed3"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60sp"
+            android:layout_marginTop="30dp"
+            android:hint="Select Date"
+            android:minHeight="48dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/card3"
+        android:layout_marginTop="10sp">
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/gender_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:hint="Select your Gender"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="95sp"
+            android:layout_below="@+id/card3"
+            android:layout_marginStart="255sp"
+            android:layout_marginTop="5sp"
+            android:background="@color/white">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="30sp"
+                android:text="Male"
+                android:textColor="#0A0B0B" />
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="30sp"
+                android:minHeight="45dp"
+                android:text="Female"
+                android:textColor="#0C0C0C" />
+
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_below="@+id/card5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_below="@+id/card5"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10sp"
+        android:hint="Accept Rules / Policies" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/checkbox1"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="10sp"
+        android:text="Button" />
+
+
+</RelativeLayout>

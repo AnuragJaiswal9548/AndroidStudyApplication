@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/kotlinFragment"
+        android:icon="@drawable/home_24"
+        />
+    <item android:title="Profile"
+        android:id="@+id/kotlin1Fragment"
+        android:icon="@drawable/profile_24"
+        />
+    <item android:title="Setting"
+        android:id="@+id/kotlin2Fragment"
+        android:icon="@drawable/settings_24"
+        />
+</menu>

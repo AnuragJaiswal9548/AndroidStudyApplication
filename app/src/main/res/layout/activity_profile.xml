@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/photo"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/profile1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imglinkedin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/linkedin" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/imglinkedin"
+            android:layout_height="wrap_content"
+            android:textColorLink="@color/black"
+            android:autoLink="all"
+            android:clickable="true"
+            android:text="www.linkedin.com/in/anurag-jaiswal-91289120b"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/github"
+            android:layout_height="30dp"
+            android:src="@drawable/github_image"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/github"
+            android:layout_height="wrap_content"
+            android:textColorLink="@color/black"
+            android:autoLink="all"
+            android:clickable="true"
+            android:text="https://github.com/AnuragJaiswal9548"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/gmail"
+            android:layout_height="30dp"
+            android:src="@drawable/gmail_image"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/gmail"
+            android:layout_height="wrap_content"
+            android:textColorLink="@color/black"
+            android:clickable="true"
+            android:autoLink="email"
+            android:text="https://anurag.jaiswal1120@gmail.com"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
